@@ -6,7 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import styles from './App.styl';
 
-import { SearchBar } from '../SearchBar';
+import { Releases } from '../Releases';
 import { configureStore } from '../../redux/configureStore';
 
 const { store, persistor } = configureStore();
@@ -15,7 +15,7 @@ const App = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <div className={styles.app}>
-        <SearchBar />
+        <Releases />
       </div>
     </PersistGate>
   </Provider>
