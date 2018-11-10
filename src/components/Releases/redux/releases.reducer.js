@@ -7,7 +7,7 @@ const initial = {
 };
 
 
-export default (state, action) => {
+export default (state: typeof initial = initial, action) => {
   switch (action.type) {
   case types.FETCH_RELEASES:
     return {
@@ -26,6 +26,6 @@ export default (state, action) => {
       isLoading: false,
     };
   default:
-    return { ...initial };
+    return state;
   }
 };

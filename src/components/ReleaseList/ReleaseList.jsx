@@ -10,7 +10,7 @@ export function ReleaseList({
 }) {
   return (
     <div>
-      {releases.map(album => <AlbumItem album={album} />)}
+      {releases.map(album => <AlbumItem album={album} key={album.id}/>)}
     </div>
   );
 }

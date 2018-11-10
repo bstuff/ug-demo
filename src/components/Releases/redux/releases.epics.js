@@ -7,7 +7,6 @@ import * as types from './releases.types';
 import * as actions from './releases.actions';
 
 export function fetchReleasesEpic(action$) {
-  console.log('>>>');
   return action$.pipe(
     ofType(types.FETCH_RELEASES),
     mergeMap(

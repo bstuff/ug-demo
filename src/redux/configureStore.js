@@ -9,16 +9,19 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage for
 
 import { reducers, rootEpic } from './reducers';
 
+const dev = process.env.NODE_ENV === 'development';
+
 const persistConfig = {
   key: 'root',
   storage,
+  debug: dev,
+  whitelist: ['favorites'],
 };
 
 const persistedReducer = persistReducer(persistConfig, combineReducers(reducers));
 
 const epicMiddleware = createEpicMiddleware();
 
-const dev = process.env.NODE_ENV === 'development';
 
 const enhancer = applyMiddleware(...[
   // routerMiddleware(history),

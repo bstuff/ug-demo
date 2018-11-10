@@ -10,3 +10,13 @@ export const fetchReleasesComplete = (payload: mixed) => ({
   payload,
 });
 
+export const addToFavorites = (payload: mixed) => ({
+  type: types.ADD_TO_FAVORITES,
+  payload,
+});
+
+export const removeFromFavorites = (payload: mixed) => ({
+  type: types.REMOVE_FROM_FAVORITES,
+  payload,
+});
+
