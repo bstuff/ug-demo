@@ -11,16 +11,17 @@ import { configureStore } from '../../redux/configureStore';
 
 const { store, persistor } = configureStore();
 
-const App = () => (
-  <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
-      <div className={styles.app}>
-        <Releases />
-      </div>
-    </PersistGate>
-  </Provider>
-);
-
+function App() {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <div className={styles.app}>
+          <Releases />
+        </div>
+      </PersistGate>
+    </Provider>
+  );
+}
 // setConfig({ logLevel:process.env.NODE_ENV === 'development' ? 'info' : 'error' });
 
 // export default hot(module)(App);
