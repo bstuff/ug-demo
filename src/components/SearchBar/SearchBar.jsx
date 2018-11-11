@@ -2,11 +2,13 @@
 import React, { useState } from 'react';
 
 export function SearchBar({
+  query = '',
   onSubmit = console.log,
 }: {
+  query: string,
   onSubmit: string => *,
 }) {
-  const [ query, setQuery ] = useState('');
+  const [ q, setQuery ] = useState(query);
 
   function handleQueryChange(e) {
     setQuery(e.target.value);
@@ -15,10 +17,11 @@ export function SearchBar({
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      onSubmit(query);
-    }}>
+      onSubmit(q);
+    }}
+    >
       <label>Альбом:</label>
-      <input type="text" value={query} onChange={handleQueryChange} />
+      <input type="text" value={q} onChange={handleQueryChange} />
       <input type="submit" value="Search" />
     </form>
   );

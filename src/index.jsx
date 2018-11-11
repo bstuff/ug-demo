@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM, { render } from 'react-dom';
 import 'reset.css';
 import 'normalize.css';
 
@@ -11,7 +11,15 @@ import { App } from './components/App';
 const container = document.getElementById('app');
 
 if (container) {
-  render(<App />, container);
+  render((
+    <React.StrictMode>
+      <React.Suspense fallback={<div>Loading....</div>}>
+        <App />
+      </React.Suspense>
+    </React.StrictMode>
+  ), container);
+  // render(<App />, container);
+  // ReactDOM.createRoot(container).render(<App />);
 }
 
 console.log('it Works');
