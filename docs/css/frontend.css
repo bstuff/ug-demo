@@ -1,102 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic);.App__app___1CTTJ {
-  width: 100%;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 2rem 3.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-@media (max-width: 1023px) {
-  .App__app___1CTTJ {
-    text-align: center;
-  }
-}
-.App__container___2UWjO {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-}
-.Game__game___tTu71 {
-  width: 100%;
-  max-width: 90vh;
-  margin: 0 auto;
-  border: 1px solid #000;
-}
-.Game__game___tTu71 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.Game__row___1ogEf {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-.Game__cell___RK4-0 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  padding: 0.1em;
-}
-.Game__cell__wrapper___3eNiX {
-  position: relative;
-  padding-bottom: 100%;
-  height: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.Game__cell__item___2Aaug {
-  overflow: visible;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: inherit;
-  border: 0;
-  outline: none;
-  background: none;
-  font: inherit;
-  line-height: normal;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: #ffd700;
-  font-size: 3em;
-  width: 100%;
-}
-.Game__cell__zero___1zWX6 {
-  opacity: 0;
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic);/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -143,7 +45,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -167,6 +69,14 @@ html {
 
 body {
   margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
 }
 
 /**
@@ -540,4 +450,40 @@ body {
   color: #fff;
   text-shadow: none;
   background: #ffbc01;
+}
+.App__app___1CTTJ {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .App__app___1CTTJ {
+    text-align: center;
+  }
+}
+.App__container___2UWjO {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
